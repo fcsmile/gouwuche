@@ -1,0 +1,22 @@
+<ul class="nav navbar-nav navbar-right">
+    <li class="dropdown" ng-init="aa=false">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" ng-click="aa=!aa ; prevent($event)"><span>购物车</span><span id="three">{{lists.length}}</span><span>件</span><span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu"  ng-class="{show:aa}" id="five">
+            <li ng-repeat="bags in lists track by $index">
+                <table class="table" id="four">
+                    <tr class="trtd">
+                        <td class="ad"><img src="{{'image/'+bags.img}}" alt="" style="max-width:40px;"></td>
+                        <td class="ad">{{bags.name}}</td>
+                        <td class="ad ad1"><span class="tdtop" ng-click="bags.num=bags.num+1">+</span><span>{{bags.num}}</span><span class="tdbottom" ng-click="(bags.num<=0)?(bags.num=0):(bags.num=bags.num-1)">-</span></td>
+                        <td class="ad">{{bags.price}}</td>
+                        <td class="ad">{{bags.num*bags.price}}</td>
+                        <td class="ad"><button type="button" class="btn  btn-default" ng-click="delete(bags.id)">删除</button></td>
+                    </tr>
+                </table>
+            </li>
+            <!--<li class="divider"></li>-->
+            <li ng-show="bag.length==0" id="aa">亲，您的购物车是空的哦，去随便逛逛吧！</li>
+            <li ng-show="bag.length!=0" id="bb">您选择的商品共有{{lists.length}}件，总价为{{count()}}元。</li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,101 @@
+body{
+    font-family: '微软雅黑';
+}
+.thumbnail{
+   width:360px;
+    height:388px;
+}
+.thumbnail img{
+    width:230px;
+    height:230px;
+}
+.caption h3{
+    font-size: 20px;
+    text-align: center;
+}
+.caption .jiage{
+    text-align: center;
+    color:rgb(196,0,0);
+    font-size: 24px;
+    font-weight:bold;
+}
+.caption span{
+    color:#333;
+    font-size: 18px;
+}
+#one{
+    /*margin-left: 78px;*/
+    width:120px;
+    height:34px;
+    background: rgb(255,237,237);
+    border:1px solid rgb(196,0,0);
+    color:rgb(196,0,0);
+    font-weight:400;
+    margin-left: 40px;
+}
+#two{
+    width:120px;
+    height:34px;
+    background: rgb(196,0,0);
+    color:#fff;
+    font-weight:400;
+    margin-left: 5px;
+}
+#three{
+    color:rgb(196,0,0);
+    font-size: 16px;
+    font-weight:400;
+}
+#four{
+    margin:0;
+}
+#five{
+    padding-bottom:5px;
+}
+.dropdown-menu{
+    width:600px;
+}
+.dropdown-menu.show{
+    display:block !important;
+}
+#aa{
+    text-align: center;
+}
+#bb{
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.ten{
+    width:80%;
+    height:80%;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+}
+.nine{
+    display:none;
+}
+.abc{
+    display:block;
+}
+#jj{
+    margin-bottom: 80px;
+}
+#uu{
+    margin-bottom: 80px;
+}
+.tdtop{
+    display:inline-block;
+    width:10px;
+    height:100%;
+    margin-right: 5px;
+}
+.tdbottom{
+    display:inline-block;
+    width:10px;
+    height:100%;
+    padding-left: 5px;
+}
